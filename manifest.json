@@ -1,0 +1,13 @@
+{
+	"manifest_version": 2,
+	"name":"quick focus",
+	"description":"focus the first input, using ctrl & i",
+	"version":"1.0",
+	"permissions":[],
+	"content_scripts":[
+		{
+			"matches":["http://*/*", "https://*/*"],
+			"js":["focus.js"]
+		}
+	]	
+}
