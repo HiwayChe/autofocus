@@ -29,3 +29,11 @@ function keyDown(event){
 }
 
 document.addEventListener("keydown", keyDown, false);
+
+window.onload = function(){
+	var input = getFirstFocusableInput();
+	if(input){
+		console.log(input);
+		input.focus();
+	}
+}
